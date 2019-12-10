@@ -27,16 +27,18 @@ def array_literal_matrix
   # Using Array literal syntax only, build a nested array that uses the data in
   # side the ENNET_HOUSE and ENFIELD_TENNIS_ACADEMY Arrays but sorts
   # alphabetically by the first character.
-  my_new_array = [ENNET_HOUSE, ENFIELD_TENNIS_ACADEMY]
-  return my_new_array[1][1]
+  my_new_array = [ENNET_HOUSE.sort, ENFIELD_TENNIS_ACADEMY.sort]
+  return my_new_array
 end
 
 def matrix_lookup(matrix, row, column)
   # Return the matrix's content at row and column
-  return matrix[row][column]
+  my_new_array = [ENNET_HOUSE, ENFIELD_TENNIS_ACADEMY]
+  return my_new_array[1][1]
 end
 
 def matrix_update(matrix, row, column, new_value)
   # Update the matrix location at row and column to have the value of new_value
   # Return the updated matrix
+  return matrix[row][column]
 end
